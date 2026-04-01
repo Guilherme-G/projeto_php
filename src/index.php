@@ -10,24 +10,22 @@
 </head>
 
 <body>
+    <form method="post" action="recebe.php"> <!-- method = método seguro action = recebe vai o formulário -->
+        <div id="login_box">
 
-    <div class="container">
-        <header>
-            <img class="logo" src="/img/LOGO.png" alt="Logo">
-            <h1 class="nome_projeto">EventSync</h1>
-            <p>Bem-vindo ao EventSync, sua solução definitiva para gestão de eventos! O EventSync tem tudo o que você
-            precisa. Nossa plataforma oferece planejamento de eventos simplificado, colaboração em tempo real e ferramentas para
-            garantir o sucesso do seu evento. Junte-se a nós hoje e experimente o futuro da gestão de eventos!</p>
-        </header>
-        
-        
-
-    </div>
+            <img class="logo" src="/img/LOGO.png" alt="Logo"><br>
+            <!--<h1 class="nome_projeto">BookSystem</h1>-->
+            <br> <br> <br>
+            Login <br> <input type="text" id="login" name="login"><br> <!-- login -->
+            Senha <br> <input type="password" id="senha" name="senha"><br><br> <!-- senha -->
+             <!--<a href="/home.php" id="submit">Validar</a>--> 
+            <input id="submit" type="submit" value="Validar">  <!-- botão validar -->
+        </div>
 
 
 
 
-
+    </form>
 
 
 
@@ -36,8 +34,3 @@
 </body>
 
 </html>
-
-<!--<?php
-
-phpinfo();
-?>-->
