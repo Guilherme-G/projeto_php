@@ -82,3 +82,34 @@ a {
     border-radius: 5px;
     border: #1500fd;
 }
+#nome_livro,
+#autor,
+#editora,
+textarea {
+    width: 270px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align-last: left;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}#nome_livro,
+#autor,
+#editora,
+textarea {
+    width: 270px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align-last: left;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
