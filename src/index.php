@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sistema de Produtos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <style>#login {
     width: 270px;
     padding: 10px;

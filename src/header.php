@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sistema de Produtos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!--<style>
         body { font-family: sans-serif; margin: 0; background: #f4f4f4; }
         nav { background: #2c3e50; padding: 15px; color: white; }
