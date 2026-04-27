@@ -9,7 +9,7 @@ $mensagens = [
     'excluido' => 'Produto removido do sistema.',
     'erro' => 'Erro ao processar solicitação.',
     'tabela_pronta' => 'Banco de dados configurado!'
-];
+];                                                                                                      //tem que fazer ainda
 
 include_once 'header.php';
 ?>
@@ -28,7 +28,7 @@ include_once 'header.php';
     </tr>
     <?php foreach($produtos as $p): ?>
     <tr>
-        <td><?= $p['id'] ?></td>
+        <td><?= $p['id'] ?></td>                                                                            
         <td><?= htmlspecialchars($p['nome']) ?></td>
         <td>R$ <?= number_format($p['preco'], 2, ',', '.') ?></td>
         <td><?= $p['quantidade'] ?></td>
