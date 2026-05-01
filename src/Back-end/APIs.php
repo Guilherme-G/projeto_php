@@ -33,7 +33,6 @@ $user = 'id do usuario';
 $pass = 'senha do usuario';                            // variaveis do usuario 
 $nome = 'nome do usuario';
 $email = 'email';
-$telefone = 'telefone';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=utf8mb4";    // variavel para a conexão com o banco                                
 
@@ -67,20 +66,10 @@ $conn->close();                                                // livro encontra
 */
 ?>
 
-<?php
-require_once 'conecta.php';                                     //conexão com o sql 
-$sql = "CREATE TABLE IF NOT EXISTS livros (                                 
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    titulo VARCHAR(100) NOT NULL,
-    autor VARCHAR(100) NOT NULL,                                
-    categoria VARCHAR(20)NOT NULL, 
-    data_livro DATE NOT NULL,                       
-    preco DECIMAL(10,2) NOT NULL,
-    quantidade INT DEFAULT 0
-)";                                                            // dados do livro                                            
-$pdo->exec($sql);                                              // execução no sql
 
-echo "<h1>Livro adicionado com sucesso!</h1>";            
+
+echo "<h1>Livro adicionado com sucesso!</h1>";
+            
 ?>
 
 <?php

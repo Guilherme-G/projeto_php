@@ -35,7 +35,8 @@ include_once 'header.php';*/                                                    
     <title>Alteração</title>
 </head>
 <body>
-   <input type="hidden" name="id" value="<?= $p['id'] ?>"> <!-- Envia o ID do produto escondido -->
+
+<input type="hidden" name="id" value="<?= $p ['id'] ?>"> <!-- Envia o ID do produto escondido -->
 
 <input type="text" name="nome" value="<?= $p['nome'] ?>" required> <!-- Campo para editar o nome já preenchido e obrigatório -->
 

@@ -13,7 +13,7 @@ $sql = "CREATE TABLE IF NOT EXISTS livros (
     preco DECIMAL(10,2) NOT NULL,
     quantidade INT DEFAULT 0
 )";                                                            // dados do livro                                            
-$lpdo->exec($sql);                                              // execução no sql
+$pdo->exec($sql);                                              // execução no sql
 
 echo "<h1>Livro adicionado com sucesso!</h1>";            
 ?>
