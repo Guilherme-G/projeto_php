@@ -15,10 +15,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {                                    
 include_once 'header.php';                                              // inclue um arquivo de cabeçalho para o comando 
 ?>
 <h2>Cadastrar Produto</h2>
+<!-- Titulo da pagina -->
+ <h2>Cadastrar Livro<h2>
+
+ <!-- Inicio do formulario -->
+<!-- method "POST" para que os dados sejam enviados de forma "escondida -->
 <form method="POST">
-    <input type="text" name="nome" placeholder="Nome" required><br><br>
-    <input type="number" step="0.01" name="preco" placeholder="Preço" required><br><br>
-    <input type="number" name="quantidade" placeholder="Quantidade" required><br><br>
-    <button type="submit">Salvar</button>
+
+<!-- Campo de texto para o titulo do livro
+<!-- name="titulo" é o nome usado para pegar esse valor -->
+<!-- placeholder é o texto que aparece dentro dos campos
+ <!-- required = campo obrigatorio -->
+  <input type="text" name="titulo" placeholder="Titulo" required><br><br>
+
+<!-- campo para o nome do Autor -->
+ <input type="text" name="autor" placeholder="Autor" required><br><br>
+ 
+ <!-- Campo para a categoria do livro -->
+<input type="text" name="categoria" placeholder="Categoria" required><br><br>
+
+<!-- Campo numerico ara o ano de publicacao -->
+ <!-- type=number só permite NUMEROS -->
+  <input type="number" name="data_publicacao" placeholder="Ano de Publicação" required><br><br>
+
+<!-- campo numerico para a quantidade em estoque -->
+ <input type="number" name="quantidade" placeholder="Quantidade" required><br><br>
+
+ <!-- botao que envia o formulario -->
+<!-- Quando clicado, envia os dados todos para o PHP -->
+ <button type="submit">Salvar</button>
+
 </form>
 <?php include_once 'footer.php'; ?>
