@@ -9,10 +9,14 @@ $mensagens = [
     'excluido' => 'Produto removido do sistema.',
     'erro' => 'Erro ao processar solicitação.',
     'tabela_pronta' => 'Banco de dados configurado!'
+    
 ];
 
 include_once 'header.php';
 ?>
+<?php if(isset($mensagens[$status])): ?>
+<p><?= $mensagens[$status] ?></p>
+<?php endif; ?>
 
 <h1>Relatório de Estoque</h1>
 

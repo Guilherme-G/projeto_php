@@ -8,7 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: relatorio.php?msg=sucesso");
         exit;
     } catch (Exception $e) {
-        header("Location: relatorio.php?msg=erro");
+       header("Location: relatorio.php?msg=erro");
+exit;
     }
 }
 include_once 'header.php';
