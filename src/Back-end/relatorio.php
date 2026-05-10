@@ -13,6 +13,9 @@ $mensagens = [
 
 include_once 'header.php';
 ?>
+<?php if(isset($mensagens[$status])): ?>
+<p><?= $mensagens[$status] ?></p>
+<?php endif; ?>
 
 <h1>Relatório de Estoque</h1>
 
