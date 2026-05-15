@@ -4,8 +4,8 @@ require_once 'conecta.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {                                    //variavel para enviar o formulario 
 
     try {
-        $stmt = $pdo->prepare("INSERT INTO produtos (titulo, autor, categoria, data_livro, preco, quantidade, ) VALUES (?, ?, ?, ?, ?, ?)"); // parte para adicionar o INSERT e os VALUES(eles estão com o simbolo ? para o usuario colocar e não o banco de dados )
-        $stmt->execute([$_POST['titulo'],$_POST['autor'],$_POST['categoria'],$_POST['data'], $_POST['preco'], $_POST['quantidade']]); // comandos para executar 
+        $stmt = $pdo->prepare("INSERT INTO produtos (titulo, autor, categoria, data_livro, preco, quantidade, ) VALUES (?, ?, ?, ?, ?, ?,?)"); // parte para adicionar o INSERT e os VALUES(eles estão com o simbolo ? para o usuario colocar e não o banco de dados )
+        $stmt->execute($_POST['id'],[$_POST['titulo'],$_POST['autor'],$_POST['categoria'],$_POST['data'], $_POST['preco'], $_POST['quantidade']]); // comandos para executar 
         header("Location: relatorio.php?msg=sucesso");                                                                                  // manda as informações para para a parte relatorio.php e se caso der erro volte 
         exit;                                                                                    // quando o cliente acabar sair da pagina  
     } catch (Exception $erro) {

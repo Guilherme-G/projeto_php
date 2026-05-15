@@ -1,5 +1,5 @@
 <?php
-$host = 'git hub';                                      // variaveis para o banco 
+$host = 'localhost';                                      // variaveis para o banco 
 $db = 'MySQL';                                                                          
 $user = 'id do usuario';
 $pass = 'senha do usuario';                            // variaveis do usuario 
